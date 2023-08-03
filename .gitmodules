@@ -1,0 +1,3 @@
+[submodule "launcher-domains"]
+	path = launcher-domains
+	url = https://github.com/GamerVII-NET/launcher-domains.git
