@@ -1,0 +1,33 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  gamervii.launchserver:
+    build:
+      context: "C:\\Users\\GamerVII\\RiderProjects\\GamerVII.LaunchServevr"
+      dockerfile: "GamerVII.LaunchServer/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "/riderDebugger/linux-x64/dotnet/dotnet"
+    - "/riderDebugger/JetBrains.Debugger.Worker.exe"
+    - "--mode=server"
+    - "--frontend-port=57100"
+    - "--backend-port=57300"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+      RIDER_DEBUGGER_LOG_DIR: "/riderLogs"
+      RESHARPER_LOG_CONF: "/riderLogsConf/backend-log.xml"
+    image: "gamervii.launchserver:dev"
+    ports:
+    - "57018:57100"
+    - "57218:57300"
+    volumes:
+    - "C:\\Users\\GamerVII\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\GamerVII\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "C:\\Users\\GamerVII\\RiderProjects\\GamerVII.LaunchServevr\\GamerVII.LaunchServer:/app:rw"
+    - "C:\\Users\\GamerVII\\AppData\\Local\\JetBrains\\RiderRemoteDebugger\\2023.1.4\\\
+      Linux64:/riderDebugger"
+    - "G:\\JetBrains\\JetBrains Rider 2023.1.4/bin:/riderLogsConf"
+    - "C:\\Users\\GamerVII\\AppData\\Local\\JetBrains\\Rider2023.1\\log\\DebuggerWorker\\\
+      JetBrains.Debugger.Worker.2023_7_28_15_59_10:/riderLogs:rw"
+    working_dir: "/app"

@@ -1,0 +1,8 @@
+﻿services:
+  gamervii.launchserver:
+    image: gamervii.launchserver
+    build:
+      context: .
+      dockerfile: GamerVII.LaunchServer/Dockerfile
+    ports:
+      - 5000:80

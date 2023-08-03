@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>7b519fe4-8d30-45b1-bbdc-9a3998b3652e</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GamerVII.LauncherDomains\GamerVII.LauncherDomains.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.5.2.json">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.4.7.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.6.4.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.7.2.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.7.10.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.8.9.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.9.4.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.10.2.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.11.2.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.12.2.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-1.13.2.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="ClientConfigs\Templates\client-template-default.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\Assets\indexes\1.7.10.json" />
+      <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\Client\liteconfig\liteloader.profiles.json" />
+      <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\Client\saves\New World\stats\31f5f477-53db-4afd-b88d-2e01815f4887.json" />
+      <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\Client\usernamecache.json" />
+      <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\HiTech-config.json" />
+    </ItemGroup>
+
+</Project>
