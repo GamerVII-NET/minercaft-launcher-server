@@ -1,0 +1,34 @@
+﻿{
+  "Name": "{name}",
+  "Version": "{version}",
+  "AssetIndex": "{version}",
+  "AssetDirectory": "asset{version}",
+  "ClientFolderName": "{name}",
+  "UpdateVerify": [
+    "libraries",
+    "natives",
+    "mods",
+    "minecraft.jar"
+  ],
+  "MainClass": "net.minecraft.launchwrapper.Launch",
+  "ClassPath": [
+    "forge.jar",
+    "minecraft.jar"
+  ],
+  "JvmArguments": [
+    "-Dfml.ignorePatchDiscrepancies=true",
+    "-Dfml.ignoreInvalidMinecraftCertificates=true",
+    "-XX:+UseG1GC",
+    "-XX:+UnlockExperimentalVMOptions",
+    "-XX:G1NewSizePercent=20",
+    "-XX:G1ReservePercent=20",
+    "-XX:MaxGCPauseMillis=50",
+    "-XX:G1HeapRegionSize=32M",
+    "-XX:+AlwaysPreTouch",
+    "-XX:-TieredCompilation",
+    "-XX:+DisableAttachMechanism"
+  ],
+  "ClientArguments": [
+    "--tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker"
+  ]
+}

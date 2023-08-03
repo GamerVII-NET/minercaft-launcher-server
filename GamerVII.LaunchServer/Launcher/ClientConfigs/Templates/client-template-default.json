@@ -1,0 +1,11 @@
+﻿{
+  "Name": "{name}",
+  "Version": "{version}",
+  "AssetIndex": "{assetIndex}",
+  "ClientFolderName": "{clientFolderName}",
+  "updateVerify": [],
+  "MainClass": "",
+  "classPath": [],
+  "jvmArgs": [],
+  "clientArgs": []
+}
