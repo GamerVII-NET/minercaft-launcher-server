@@ -1,9 +1,9 @@
 ﻿using GamerVII.LauncherDomains.Models.Dto.Server;
 using GamerVII.LauncherDomains.Models.Dto.Users;
-using GamerVII.LaunchServer.Services.Auth;
+using GamerVII.LaunchServer.Core.Services.Auth;
 using Newtonsoft.Json;
 
-namespace GamerVII.LaunchServer.Core.Requests;
+namespace GamerVII.LaunchServer.Core.Requests.Auth;
 
 public static class AuthRequests
 {

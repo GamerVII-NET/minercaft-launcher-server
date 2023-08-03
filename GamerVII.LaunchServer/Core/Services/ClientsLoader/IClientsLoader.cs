@@ -1,11 +1,9 @@
 ﻿using GamerVII.LauncherDomains.Models.Launcher;
 
-namespace GamerVII.LaunchServer.Services.ClientsLoader;
+namespace GamerVII.LaunchServer.Core.Services.ClientsLoader;
 
 public interface IClientsLoader
 {
-    public string[] Mirrors { get; set; }
-
     Task<bool> DownloadClientAsync(Client client);
 
 }

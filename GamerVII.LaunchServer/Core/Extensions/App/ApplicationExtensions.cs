@@ -1,17 +1,22 @@
-﻿using GamerVII.LaunchServer.Core.Requests;
-using GamerVII.LaunchServer.Profiles.ClientProfiles;
-using GamerVII.LaunchServer.Repositories.Clients;
-using GamerVII.LaunchServer.Services.Auth;
-using GamerVII.LaunchServer.Services.Clients;
-using GamerVII.LaunchServer.Services.ClientsLoader;
-using GamerVII.LaunchServer.Services.System;
+﻿using GamerVII.LaunchServer.Core.Configs;
+using GamerVII.LaunchServer.Core.Profiles.ClientProfiles;
+using GamerVII.LaunchServer.Core.Repositories.Clients;
+using GamerVII.LaunchServer.Core.Requests;
+using GamerVII.LaunchServer.Core.Requests.Auth;
+using GamerVII.LaunchServer.Core.Requests.Client;
+using GamerVII.LaunchServer.Core.Requests.Version;
+using GamerVII.LaunchServer.Core.Services.Auth;
+using GamerVII.LaunchServer.Core.Services.Clients;
+using GamerVII.LaunchServer.Core.Services.ClientsLoader;
+using GamerVII.LaunchServer.Core.Services.System;
 
-namespace GamerVII.LaunchServer.Extensions.App;
+namespace GamerVII.LaunchServer.Core.Extensions.App;
 
 public static class ApplicationExtensions
 {
     public static WebApplicationBuilder AddServices(this WebApplicationBuilder builder)
     {
+        builder.Services.AddSingleton<LaunchServerConfig>();
         builder.Services.AddSingleton<IClientsLoader, ClientsLoader>();
         builder.Services.AddSingleton<IClientRepository, ClientRepository>();
         builder.Services.AddSingleton<IStorageService, StorageService>();

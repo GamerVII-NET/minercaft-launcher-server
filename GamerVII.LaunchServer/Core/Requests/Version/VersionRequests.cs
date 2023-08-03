@@ -1,8 +1,8 @@
-﻿using GamerVII.LaunchServer.Services.Clients;
+﻿using GamerVII.LaunchServer.Core.Services.Clients;
 
-namespace GamerVII.LaunchServer.Core.Requests;
+namespace GamerVII.LaunchServer.Core.Requests.Version;
 
-public class VersionRequests
+public abstract class VersionRequests
 {
     
     public static async Task<IResult> GetVersions(IClientService clientService, HttpContext context)

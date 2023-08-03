@@ -1,7 +1,7 @@
 ﻿using GamerVII.LauncherDomains.Models.Dto.GameClients;
 using GamerVII.LauncherDomains.Models.Launcher;
 
-namespace GamerVII.LaunchServer.Services.Clients;
+namespace GamerVII.LaunchServer.Core.Services.Clients;
 
 public interface IClientService
 {

@@ -2,7 +2,7 @@
 using GamerVII.LauncherDomains.Models.Dto.GameClients;
 using GamerVII.LauncherDomains.Models.Launcher;
 
-namespace GamerVII.LaunchServer.Profiles.ClientProfiles;
+namespace GamerVII.LaunchServer.Core.Profiles.ClientProfiles;
 
 public class ClientProfiles : Profile
 {

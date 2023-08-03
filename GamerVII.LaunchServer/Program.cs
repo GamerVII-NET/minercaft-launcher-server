@@ -1,4 +1,4 @@
-using GamerVII.LaunchServer.Extensions.App;
+using GamerVII.LaunchServer.Core.Extensions.App;
 
 var builder = WebApplication
     .CreateBuilder(args)

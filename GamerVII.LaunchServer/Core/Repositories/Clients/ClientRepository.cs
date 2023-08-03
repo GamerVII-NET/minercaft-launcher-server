@@ -1,8 +1,8 @@
 ﻿using GamerVII.LauncherDomains.Models.Launcher;
-using GamerVII.LaunchServer.Extensions.Client;
-using GamerVII.LaunchServer.Services.System;
+using GamerVII.LaunchServer.Core.Extensions.Client;
+using GamerVII.LaunchServer.Core.Services.System;
 
-namespace GamerVII.LaunchServer.Repositories.Clients;
+namespace GamerVII.LaunchServer.Core.Repositories.Clients;
 
 public class ClientRepository : IClientRepository
 {

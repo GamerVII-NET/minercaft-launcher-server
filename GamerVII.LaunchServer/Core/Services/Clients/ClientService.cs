@@ -1,11 +1,11 @@
 ﻿using System.Text.RegularExpressions;
 using GamerVII.LauncherDomains.Models.Dto.GameClients;
 using GamerVII.LauncherDomains.Models.Launcher;
-using GamerVII.LaunchServer.Repositories.Clients;
-using GamerVII.LaunchServer.Services.ClientsLoader;
-using GamerVII.LaunchServer.Services.System;
+using GamerVII.LaunchServer.Core.Repositories.Clients;
+using GamerVII.LaunchServer.Core.Services.ClientsLoader;
+using GamerVII.LaunchServer.Core.Services.System;
 
-namespace GamerVII.LaunchServer.Services.Clients;
+namespace GamerVII.LaunchServer.Core.Services.Clients;
 
 public partial class ClientService : IClientService
 {

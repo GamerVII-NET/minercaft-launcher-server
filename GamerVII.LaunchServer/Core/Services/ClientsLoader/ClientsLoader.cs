@@ -1,21 +1,21 @@
 ﻿using System.IO.Compression;
 using System.Net;
 using GamerVII.LauncherDomains.Models.Launcher;
-using GamerVII.LaunchServer.Services.System;
+using GamerVII.LaunchServer.Core.Configs;
+using GamerVII.LaunchServer.Core.Services.System;
 
-namespace GamerVII.LaunchServer.Services.ClientsLoader;
+namespace GamerVII.LaunchServer.Core.Services.ClientsLoader;
 
 public class ClientsLoader : IClientsLoader
 {
     private readonly IStorageService _storageService;
+    
+    private readonly LaunchServerConfig _config;
 
-    public string[] Mirrors { get; set; } = {
-        "https://launcher.sashok724.net/download"
-    };
-
-    public ClientsLoader(IStorageService storageService)
+    public ClientsLoader(IStorageService storageService, LaunchServerConfig config)
     {
         _storageService = storageService;
+        _config = config;
     }
 
     public async Task<bool> DownloadClientAsync(Client client)
@@ -45,7 +45,7 @@ public class ClientsLoader : IClientsLoader
     {
         try
         {
-            foreach (var mirror in Mirrors)
+            foreach (var mirror in _config.Mirrors)
             {
                 var url = $"{mirror}/assets/{client.Config?.Version}.zip";
                 using var httpClient = new HttpClient();
@@ -106,7 +106,7 @@ public class ClientsLoader : IClientsLoader
     {
         try
         {
-            foreach (var mirror in Mirrors)
+            foreach (var mirror in _config.Mirrors)
             {
                 var url = $"{mirror}/clients/{client.Config?.Version}.zip";
                 using var httpClient = new HttpClient();

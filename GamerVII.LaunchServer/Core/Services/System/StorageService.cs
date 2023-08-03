@@ -1,11 +1,10 @@
 ﻿using Newtonsoft.Json;
 
-namespace GamerVII.LaunchServer.Services.System;
+namespace GamerVII.LaunchServer.Core.Services.System;
 
 public class StorageService : IStorageService
 {
     public string BaseDirectory { get; set; } = @"Launcher";
-    
     public string ClientDirectory { get; set; } = $@"Launcher\Clients";
 
     public Task<string> CreateDirectoryAsync(string relativePath)

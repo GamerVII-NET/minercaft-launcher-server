@@ -1,6 +1,6 @@
-﻿using GamerVII.LaunchServer.Services.System;
+﻿using GamerVII.LaunchServer.Core.Services.System;
 
-namespace GamerVII.LaunchServer.Extensions.Client;
+namespace GamerVII.LaunchServer.Core.Extensions.Client;
 
 public static class ClientExtensions
 {

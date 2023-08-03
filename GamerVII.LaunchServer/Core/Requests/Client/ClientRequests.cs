@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
 using GamerVII.LauncherDomains.Models.Dto.GameClients;
-using GamerVII.LauncherDomains.Models.Launcher;
-using GamerVII.LaunchServer.Services.Clients;
+using GamerVII.LaunchServer.Core.Services.Clients;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GamerVII.LaunchServer.Core.Requests;
+namespace GamerVII.LaunchServer.Core.Requests.Client;
 
 public static class ClientRequests
 {
@@ -17,7 +16,7 @@ public static class ClientRequests
             return Results.BadRequest();
         }
 
-        Client gameClient = await clientService.CreateClient(client);
+        LauncherDomains.Models.Launcher.Client gameClient = await clientService.CreateClient(client);
         
         return Results.Ok(mapper.Map<ReadGameClientDto>(gameClient));
     }
@@ -39,7 +38,7 @@ public static class ClientRequests
     
     public static async Task<IResult> GetClientByName(IClientService clientService, IMapper mapper, string name)
     {
-        Client? client = await clientService.GetClientByName(name);
+        LauncherDomains.Models.Launcher.Client? client = await clientService.GetClientByName(name);
 
         if (client == null)
         {
@@ -51,7 +50,7 @@ public static class ClientRequests
     
     public static async Task<IResult> LoadClient(IClientService clientService, string name)
     {
-        Client? client = await clientService.GetClientByName(name);
+        LauncherDomains.Models.Launcher.Client? client = await clientService.GetClientByName(name);
 
         if (client == null)
         {

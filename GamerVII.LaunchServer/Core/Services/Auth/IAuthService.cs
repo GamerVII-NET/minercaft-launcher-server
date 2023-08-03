@@ -1,6 +1,6 @@
 ﻿using GamerVII.LauncherDomains.Models.Dto.Users;
 
-namespace GamerVII.LaunchServer.Services.Auth;
+namespace GamerVII.LaunchServer.Core.Services.Auth;
 
 public interface IAuthService
 {

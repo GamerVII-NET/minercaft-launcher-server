@@ -1,4 +1,4 @@
-﻿namespace GamerVII.LaunchServer.Services.System;
+﻿namespace GamerVII.LaunchServer.Core.Services.System;
 
 public interface IStorageService
 {

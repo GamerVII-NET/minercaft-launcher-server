@@ -1,6 +1,6 @@
 ﻿using GamerVII.LauncherDomains.Models.Launcher;
 
-namespace GamerVII.LaunchServer.Repositories.Clients;
+namespace GamerVII.LaunchServer.Core.Repositories.Clients;
 
 public interface IClientRepository
 {
