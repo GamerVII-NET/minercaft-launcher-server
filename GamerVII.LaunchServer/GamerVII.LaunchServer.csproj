@@ -10,6 +10,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\GamerVII.LauncherDomains\GamerVII.LauncherDomains.csproj" />
+      <ProjectReference Include="..\launcher-domains\GamerVII.LauncherDomains\GamerVII.LauncherDomains.csproj" />
     </ItemGroup>
 
     <ItemGroup>
