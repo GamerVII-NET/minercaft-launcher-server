@@ -1,5 +1,6 @@
 ﻿using GamerVII.LauncherDomains.Models.Data;
 using GamerVII.LaunchServer.Core.Enums;
+using Microsoft.EntityFrameworkCore;
 
 namespace GamerVII.LaunchServer.Core.Configs;
 
@@ -9,15 +10,15 @@ public class LaunchServerConfig
         "https://launcher.sashok724.net/download"
     };
 
-    public readonly DataStorageType DataStorageType = DataStorageType.Mysql;
+    public DataStorageType DataStorageType = Enums.DataStorageType.Mysql;
 
-    public readonly DataBaseConnection Connection = new DataBaseConnection
+    public readonly DataBaseConnection Connection = new()
     {
         Host = "localhost",
         Login = "root",
         Password = "",
-        User = "root",
-        DataBaseName = ""
+        DataBaseVersion = "8.1.9",
+        DataBaseName = "LauncherDevelop",
     };
-
+    
 }

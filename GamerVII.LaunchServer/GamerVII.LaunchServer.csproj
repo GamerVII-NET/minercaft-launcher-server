@@ -71,6 +71,10 @@
       <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\Client\saves\New World\stats\31f5f477-53db-4afd-b88d-2e01815f4887.json" />
       <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\Client\usernamecache.json" />
       <_ContentIncludedByDefault Remove="Launcher\Clients\HiTech\HiTech-config.json" />
+
     </ItemGroup>
+
+
+
 
 </Project>

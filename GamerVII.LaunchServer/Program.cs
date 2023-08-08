@@ -2,8 +2,8 @@ using GamerVII.LaunchServer.Core.Extensions.App;
 
 var builder = WebApplication
     .CreateBuilder(args)
-    .AddServices()
     .AddDatabaseContext()
+    .AddServices()
     .AddAutoMapper();
 
 var app = builder
