@@ -17,7 +17,7 @@ public class StorageService : IStorageService
         return Task.FromResult(!new DirectoryInfo(relativePath).Exists);
     }
 
-    public async Task<T> CreateJsonFileAsync<T>(string fileName, string template)
+    public async Task<T?> CreateJsonFileAsync<T>(string fileName, string template)
     {
         await using var fileWriter = new StreamWriter(fileName);
         await fileWriter.WriteAsync(template);
@@ -41,7 +41,7 @@ public class StorageService : IStorageService
         {
             new DirectoryInfo(relativePath).Delete(true);
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             isSuccess = false;
         }
@@ -68,7 +68,7 @@ public class StorageService : IStorageService
             baseDirectory.Create();
         }
 
-        var directories = baseDirectory?.GetDirectories()?.AsEnumerable() ?? new List<DirectoryInfo>();
+        var directories = baseDirectory.GetDirectories().AsEnumerable();
         
         return Task.FromResult(directories);
     }

@@ -9,9 +9,9 @@ public class LaunchServerConfig
         "https://launcher.sashok724.net/download"
     };
 
-    public DataStorageType DataStorageType = DataStorageType.Mysql;
+    public readonly DataStorageType DataStorageType = DataStorageType.Mysql;
 
-    public DataBaseConnection Connection = new DataBaseConnection
+    public readonly DataBaseConnection Connection = new DataBaseConnection
     {
         Host = "localhost",
         Login = "root",

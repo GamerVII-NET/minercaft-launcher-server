@@ -33,7 +33,7 @@ public interface IStorageService
     /// <param name="fileName">The name of the JSON file to create.</param>
     /// <param name="template">The content template to use for serialization.</param>
     /// <returns>A task representing the asynchronous operation.</returns>
-    Task<T> CreateJsonFileAsync<T>(string fileName, string template);
+    Task<T?> CreateJsonFileAsync<T>(string fileName, string template);
 
     /// <summary>
     /// Asynchronously reads the content of a JSON file with the specified relative path and deserializes it to type T.

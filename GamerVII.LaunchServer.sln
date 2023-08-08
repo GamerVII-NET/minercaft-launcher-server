@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamerVII.LaunchServer", "GamerVII.LaunchServer\GamerVII.LaunchServer.csproj", "{EF746020-42DD-4939-89E5-AB056FABDCBC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DF2694E7-0997-41CC-B01F-A6D8DA25A039}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
@@ -9,19 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamerVII.LauncherDomains", "launcher-domains\GamerVII.LauncherDomains\GamerVII.LauncherDomains.csproj", "{E5153710-2300-4DB8-9111-670D3021A938}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamerVII.LaunchServer", "GamerVII.LaunchServer\GamerVII.LaunchServer.csproj", "{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF746020-42DD-4939-89E5-AB056FABDCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF746020-42DD-4939-89E5-AB056FABDCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF746020-42DD-4939-89E5-AB056FABDCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF746020-42DD-4939-89E5-AB056FABDCBC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E5153710-2300-4DB8-9111-670D3021A938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E5153710-2300-4DB8-9111-670D3021A938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5153710-2300-4DB8-9111-670D3021A938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5153710-2300-4DB8-9111-670D3021A938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
