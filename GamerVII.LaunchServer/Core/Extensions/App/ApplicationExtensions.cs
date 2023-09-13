@@ -37,10 +37,9 @@ public static class ApplicationExtensions
 
     public static WebApplicationBuilder AddDatabaseContext(this WebApplicationBuilder builder)
     {
-        
         builder.Services.AddSingleton<LaunchServerConfig>();
         builder.Services.AddDbContext<DataBaseContext>();
-        
+
         return builder;
     }
 
@@ -59,7 +58,7 @@ public static class ApplicationExtensions
         app.MapPost("/auth/join", AuthRequests.AuthJoin);
         app.MapGet("/auth/hasjoined",
             (string username, string serverId) => AuthRequests.AuthHasJoined(username, serverId));
-        
+
         app.MapGet("/clients", ClientRequests.GetClients);
         app.MapGet("/clients/{name}", ClientRequests.GetClientByName);
         app.MapPost("/clients", ClientRequests.CreateClient);
@@ -67,7 +66,7 @@ public static class ApplicationExtensions
         app.MapDelete("/clients", ClientRequests.RemoveClient);
 
         app.MapGet("/versions", VersionRequests.GetVersions);
-        
+
         app.MapGet("/launcher", LauncherRequests.GetLauncherInfo);
 
         return app;

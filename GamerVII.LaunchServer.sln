@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamerVII.LauncherDomains", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamerVII.LaunchServer", "GamerVII.LaunchServer\GamerVII.LaunchServer.csproj", "{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamerVII.Minecraft.Loader", "GamerVII.Minecraft.Loader\GamerVII.Minecraft.Loader.csproj", "{3D4F6E7C-9517-4A2F-B3E6-52F437EC88CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamerVII.Launcher.Tests", "GamerVII.Launcher.Tests\GamerVII.Launcher.Tests.csproj", "{819CAFAA-1D13-4FD1-B696-876F1DDDF645}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +27,13 @@ Global
 		{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC81EFAC-2311-42FC-9D22-A7B8DDFB858D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4F6E7C-9517-4A2F-B3E6-52F437EC88CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4F6E7C-9517-4A2F-B3E6-52F437EC88CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4F6E7C-9517-4A2F-B3E6-52F437EC88CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4F6E7C-9517-4A2F-B3E6-52F437EC88CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{819CAFAA-1D13-4FD1-B696-876F1DDDF645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819CAFAA-1D13-4FD1-B696-876F1DDDF645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819CAFAA-1D13-4FD1-B696-876F1DDDF645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819CAFAA-1D13-4FD1-B696-876F1DDDF645}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
